@@ -1,0 +1,9 @@
+[submodule "Frontend"]
+	path = Frontend
+	url = github.com:JuiceArb/Frontend
+[submodule "Scanner"]
+	path = Scanner
+	url = github.com:JuiceArb/Scanner
+[submodule "MatchingEngine"]
+	path = MatchingEngine
+	url = github.com:JuiceArb/MatchingEngine
