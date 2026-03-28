@@ -12,3 +12,4 @@ git submodule status --recursive
 
 git add .
 git commit -m "script: Update submodules to latest commits"
+git push origin main
