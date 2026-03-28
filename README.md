@@ -49,7 +49,7 @@ Juice targets three classes of market inefficiencies:
                         │
 ┌───────────────────────▼─────────────────────────────────────┐
 │              Arbitrage Calculator (Go · WebSocket)           │
-│          Real-time spread calculation · Kelly Criterion      │
+│          Real-time spread calculation                        │
 └───────────────────────┬─────────────────────────────────────┘
                         │
 ┌───────────────────────▼─────────────────────────────────────┐
@@ -248,9 +248,9 @@ Upload `kalshi_public_key.pem` to your Kalshi account settings, then set `KALSHI
 |------|------|
 | **Máté Dort** | Matching engine, NLP pipeline, Kalshi/Polymarket integrations |
 | **Harrison Stadler** | Full-stack engineering, dashboard, infrastructure |
-| **Stephen Sulimani** | Quantitative finance, arb math, Kelly Criterion sizing, risk modeling |
+| **Stephen Sulimani** | Quantitative finance, arb math, backend development |
 
-*Built at [Hacklanta](https://hacklanta.com) · Georgia State University*
+*Built at Hacklanta · Georgia State University*
 
 ---
 
