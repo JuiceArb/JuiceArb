@@ -33,28 +33,28 @@ Juice targets three classes of market inefficiencies:
 ## Architecture
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                      Data Ingestion Layer                    │
+│                      Data Ingestion Layer                   │
 │   Python · Kalshi API · Polymarket Gamma · PredictIt · ODDS │
 └───────────────────────┬─────────────────────────────────────┘
                         │
 ┌───────────────────────▼─────────────────────────────────────┐
-│                   Matching Engine (Python)                   │
+│                   Matching Engine (Python)                  │
 │  sentence-transformers → Date Guard → Gemini 2.5 Flash LLM  │
 └───────────────────────┬─────────────────────────────────────┘
                         │
 ┌───────────────────────▼─────────────────────────────────────┐
-│               PostgreSQL on Neon (AWS us-east-1)             │
-│            markets · matched_pairs · arb_opportunities       │
+│               PostgreSQL on Neon (AWS us-east-1)            │
+│            markets · matched_pairs · arb_opportunities      │
 └───────────────────────┬─────────────────────────────────────┘
                         │
 ┌───────────────────────▼─────────────────────────────────────┐
-│              Arbitrage Calculator (Go · WebSocket)           │
-│          Real-time spread calculation                        │
+│              Arbitrage Calculator (Go · WebSocket)          │
+│          Real-time spread calculation                       │
 └───────────────────────┬─────────────────────────────────────┘
                         │
 ┌───────────────────────▼─────────────────────────────────────┐
-│               Live Dashboard (Next.js · Auth)                │
-│         Real-time opportunity alerts · Portfolio view        │
+│               Live Dashboard (Next.js · Auth)               │
+│         Real-time opportunity alerts · Portfolio view       │
 └─────────────────────────────────────────────────────────────┘
 ```
 
